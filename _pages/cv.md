@@ -92,22 +92,4 @@ redirect_from:
 * Scientific Committee, Waves 2024, Berlin
 * Scientific Committee, Waves 2022, Paris
 * Scientific Committee, 11th International Conference on Theoretical and Computational Acoustics, 2014
-* Organizer of more than 30 minisymposia at SIAM Annual Meetings, SIAM CSE, Waves and ICOSAHOM, 2009--
-* Referee for *Journal of Scientific Computing*, *Journal of Computational Physics*, *SIAM Journal on Scientific Computing*, *SIAM Journal on Numerical Analysis*, *Journal of Computational and Applied Mathematics*, *Wave Motion*, *AIAA Journal* and others
-* Reviewer for NSF, DOE ASCR, the Israel Science Foundation and the U.S. Army Corps of Engineers
 
-### Thesis examination
-{: .archive__item-title}
-
-* Opponent, PhD defense of Gustav Eriksson, Uppsala University, 2024
-* External evaluator, PhD thesis in mathematics, Australian National University, 2024
-* Opponent, PhD defense of Andrea Alessandro Ruggiu, Linköping University, 2019
-* Opponent, Licentiate thesis of Gabriela Malenova, KTH, 2016
-
-## Publications, talks and teaching
-{: .archive__subtitle}
-
-* [Publications]({{ base_path }}/publications/)
-* [Talks]({{ base_path }}/talks/)
-* [Teaching]({{ base_path }}/teaching/)
-* [Group members and alumni]({{ base_path }}/group/)

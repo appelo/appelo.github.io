@@ -25,3 +25,6 @@ package-lock.json
 # Python bytecode from markdown_generator scripts
 __pycache__/
 *.pyc
+
+# Scratch area for slide decks etc. (excluded from the Jekyll build too)
+tmp/

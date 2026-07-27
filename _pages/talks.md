@@ -10,6 +10,21 @@ author_profile: true
 A selection of recent and invited presentations. The full record is in my
 [CV]({{ base_path }}/cv/).
 
+## Featured slides
+{: .archive__subtitle}
+
+Slides from three talks, one for each of the group's main research directions.
+
+* [**WaveHoltz: A time domain method for time independent harmonic problems**]({{ base_path }}/files/talks/waveholtz.pdf)
+  --- solving time-harmonic wave problems with a time-domain wave solver.
+  {: .archive__item-excerpt}
+* [**Structure-Preserving Algorithms for Quantum Digital Twins: A Numerical Analyst's Journey**]({{ base_path }}/files/talks/quantum-digital-twins.pdf)
+  --- structure preserving methods for the Lindblad equation and quantum optimal control.
+  {: .archive__item-excerpt}
+* [**Low-rank Anderson Acceleration**]({{ base_path }}/files/talks/low-rank-anderson-acceleration.pdf)
+  --- low-rank methods for matrix and tensor differential equations.
+  {: .archive__item-excerpt}
+
 ## Plenary presentations
 {: .archive__subtitle}
 
