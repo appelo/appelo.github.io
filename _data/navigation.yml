@@ -17,8 +17,5 @@ main:
   - title: "Group"
     url: /group/
 
-  - title: "Software"
-    url: /software/
-
   - title: "CV"
     url: /cv/

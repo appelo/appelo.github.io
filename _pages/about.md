@@ -26,18 +26,20 @@ More recently we have also been working on quantum computing.
 * **Wave propagation.** High order accurate methods for acoustic, elastic and
   electromagnetic waves, built so that stability follows from a discrete energy
   estimate. This includes energy based discontinuous Galerkin methods, Hermite
-  methods, and summation-by-parts finite differences.
+  and Hermite-Taylor methods, and summation-by-parts finite differences.
 * **Frequency domain solvers.** The WaveHoltz iteration solves the Helmholtz
   equation by time domain wave solves, turning an indefinite problem into a
-  positive definite one that parallelizes and scales.
-* **Quantum computing.** Quantum optimal control, and the numerical analysis
-  underlying it.
+  positive definite one that parallelizes and scales. Related work covers
+  elastic and electromagnetic waves, overset grids, and eigenvalue computation.
+* **Quantum computing.** Structure preserving and low rank methods for the
+  Lindblad master equation, and quantum optimal control.
+* **Low rank methods.** Adaptive low rank time stepping, low rank Anderson
+  acceleration, and tensor methods for matrix differential equations.
 * **Unbounded domains.** Artificial boundary conditions --- perfectly matched
   layers and local high order radiation conditions --- for problems posed on
   unbounded domains.
 
-See the [publications]({{ base_path }}/publications/) page for the full list,
-and [software]({{ base_path }}/software/) for codes.
+See the [publications]({{ base_path }}/publications/) page for the full list.
 
 ## Openings
 {: .archive__subtitle}
@@ -52,7 +54,8 @@ and [software]({{ base_path }}/software/) for codes.
 ## Group
 {: .archive__subtitle}
 
-The group currently includes PhD students at Virginia Tech and Michigan State.
-Former members have gone on to faculty positions at CSU Long Beach and HKUST,
-and to postdocs at Los Alamos, NYU and Arizona State --- the
-[group]({{ base_path }}/group/) page has the full roster.
+The group currently includes two postdocs and four PhD students at Virginia Tech
+and Michigan State. Former members have gone on to faculty positions at CSU Long
+Beach, HKUST and UT Dallas, and to postdocs at Los Alamos, the Courant Institute
+and Arizona State --- the [group]({{ base_path }}/group/) page has the full
+roster.

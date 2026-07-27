@@ -1,5 +1,7 @@
 # Group roster, rendered by _pages/group.md
 #
+# Source of truth: Appelo_D_CV.pdf, "Teaching" section (advisement), 24 July 2026.
+#
 # `name` and `role` are required; every other field is optional and guarded by
 # an {% if %} in the template.
 #
@@ -9,33 +11,65 @@
 
 current:
   - name: "Daniel Appelö"
+    linkedin: "https://www.linkedin.com/in/appelo/"
     role: "Group leader"
     affiliation: "Professor, Mathematics and CMDA, Virginia Tech"
 
+  - name: "Jiuhua Hu"
+    role: "Postdoc"
+    years: "2024-"
+
+  - name: "Måns Andersson"
+    linkedin: "https://se.linkedin.com/in/maansandersson"
+    role: "Postdoc"
+    years: "2025-"
+
   - name: "Amit Rotem"
+    linkedin: "https://www.linkedin.com/in/amit-rotem-6b9275399/"
     role: "PhD candidate"
     affiliation: "Virginia Tech"
-    expected: 2025
+    expected: 2026
 
   - name: "Spencer Lee"
+    linkedin: "https://www.linkedin.com/in/spencer-lee-msu/"
     role: "PhD candidate"
     affiliation: "Michigan State University"
-    expected: 2025
+    expected: 2026
+
+  - name: "Peter DelMastro"
+    linkedin: "https://www.linkedin.com/in/pdelmastro"
+    role: "PhD candidate"
+    affiliation: "Virginia Tech"
+    expected: 2027
+
+  - name: "Nishan Gurung"
+    role: "PhD student"
+    affiliation: "Virginia Tech"
+    expected: 2030
 
 alumni:
+  - name: "Shixu Meng"
+    role: "Postdoc"
+    years: "2024-2025"
+    end: 2025
+    now: "Assistant Professor, University of Texas at Dallas"
+
   - name: "Yann-Meing Law"
+    linkedin: "https://www.linkedin.com/in/yann-meing-law-8a137a109/"
     role: "Postdoc"
     years: "2021-2023"
     end: 2023
-    now: "Assistant Professor, Department of Mathematics and Statistics, California State University Long Beach"
+    now: "Assistant Professor, California State University Long Beach"
 
   - name: "Zhichao Peng"
+    linkedin: "https://www.linkedin.com/in/zhichao-peng-13895b210/"
     role: "Postdoc"
     years: "2020-2023"
     end: 2023
-    now: "Tenure-track Assistant Professor, Department of Mathematics, The Hong Kong University of Science and Technology"
+    now: "Assistant Professor, Hong Kong University of Science and Technology"
 
   - name: "Allen Alvarez Loya"
+    linkedin: "https://www.linkedin.com/in/allen-alvarez-loya-728aa88b/"
     role: "PhD"
     institution: "CU Boulder"
     years: "2022"
@@ -44,61 +78,52 @@ alumni:
     now: "NSF Postdoc at Los Alamos National Laboratory"
 
   - name: "Fortino Garcia"
+    linkedin: "https://www.linkedin.com/in/fortino-garcia-2166b882/"
     role: "PhD"
     institution: "CU Boulder"
     years: "2021"
     end: 2021
-    thesis: "Numerical Methods for Wave Phenomena"
-    now: "NSF Postdoc at NYU"
+    thesis: "Part I: WaveHoltz, a new iterative method for frequency domain problems. Part II: Numerical methods for quantum control"
+    now: "NSF Postdoc at the Courant Institute, New York University"
 
   - name: "Oleksii Beznosov"
+    linkedin: "https://www.linkedin.com/in/oleksii-beznosov-a17b6a7b/"
     role: "PhD"
     institution: "University of New Mexico"
     years: "2020"
     end: 2020
-    thesis: "From Wave Propagation to Spin Dynamics"
-    now: "Postdoc at the University of New Mexico"
+    thesis: "From Wave Propagation to Spin Dynamics: Mathematical and Computational Aspects"
+    now: "Postdoc at Los Alamos National Laboratory"
 
   - name: "Adeline Kornelus"
+    linkedin: "https://www.linkedin.com/in/adeline-kornelus-23386676/"
     role: "PhD"
     institution: "University of New Mexico"
     years: "2017"
     end: 2017
-    thesis: "High-order Hermite and discontinuous Galerkin methods"
+    thesis: "High Order Hermite and Discontinuous Galerkin Methods for Hyperbolic Problems"
     now: "Postdoc at Arizona State University"
 
   - name: "Juan Pablo Madrigal Cianci"
+    linkedin: "https://www.linkedin.com/in/juan-pablo-madrigal-cianci-81b60b136/"
     role: "MS"
     institution: "University of New Mexico"
     years: "2017"
-    end: 2017
-    thesis: "Seismic source inversion"
-    now: "PhD student at EPFL"
-
-  - name: "Siyang Wang"
-    role: "Visitor"
-    years: "2017"
-    end: 2017
-    now: "Lektor at Umeå University, Sweden"
-
-  - name: "Kristoffer Virta"
-    role: "Visitor"
-    years: "2015, 2016"
     end: 2016
-    now: "Athlete and number theorist"
+    thesis: "Deterministic and Probabilistic Methods for Seismic Source Inversion"
 
   - name: "Evan Dye"
+    linkedin: "https://www.linkedin.com/in/evandye/"
     role: "MS"
     institution: "University of New Mexico"
     years: "2014"
     end: 2014
-    thesis: "GPU optimization"
-    now: "Research Engineer at the University of New Mexico"
+    thesis: "GPU Implementations of Hermite Methods"
 
-  - name: "Xi (Ronald) Chen"
+  - name: "Xi Chen"
     role: "PhD"
     institution: "University of New Mexico"
     years: "2012"
     end: 2012
-    thesis: "Electromagnetic wave analysis"
-    now: "Research Engineer at HyPerComp Inc. (previously postdoc at the University of Arizona)"
+    thesis: "Numerical and Analytical Studies of Electromagnetic Waves: Hermite Methods, Supercontinuum Generation, and Multiple Poles in the SEM"
+    now: "Researcher at HyPerComp Engineering Inc."

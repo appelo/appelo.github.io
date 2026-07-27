@@ -15,7 +15,7 @@ equations. We will have openings for both postdocs and PhD students --- please
 {: .archive__subtitle}
 
 {% for m in site.data.group.current %}
-### {{ m.name }}
+### {% if m.linkedin %}[{{ m.name }}]({{ m.linkedin }}){% else %}{{ m.name }}{% endif %}
 {: .archive__item-title}
 
 {{ m.role }}{% if m.affiliation %}, {{ m.affiliation }}{% endif %}{% if m.expected %} (expected {{ m.expected }}){% endif %}
@@ -27,7 +27,7 @@ equations. We will have openings for both postdocs and PhD students --- please
 
 {% assign alumni = site.data.group.alumni | sort: "end" | reverse %}
 {% for m in alumni %}
-### {{ m.name }}
+### {% if m.linkedin %}[{{ m.name }}]({{ m.linkedin }}){% else %}{{ m.name }}{% endif %}
 {: .archive__item-title}
 
 {{ m.role }}{% if m.institution %}, {{ m.institution }}{% endif %}{% if m.years %} ({{ m.years }}){% endif %}

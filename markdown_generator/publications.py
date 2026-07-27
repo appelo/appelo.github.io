@@ -60,16 +60,17 @@ def create_md(lines: list, layout: list):
         if 'bibtex_url' in layout and len(str(item[layout.index('bibtex_url')])) > 5:
             md += f"\nbibtexurl: '{item[layout.index('bibtex_url')]}'"
         md += f"\ncitation: '{html_escape(item[layout.index('citation')])}'"
-        md += "\n---"
-        
-        # Markdown description for individual page
-        if len(str(item[layout.index('excerpt')])) > 5:
-            md += f"\n\n{html_escape(item[layout.index('excerpt')])}"
-        if len(str(item[layout.index('paper_url')])) > 5:
-            md += f"\n\n[Download paper here]({item[layout.index('paper_url')]})"
-        if 'slides_url' in layout and len(str(item[layout.index('slides_url')])) > 5:
-            md += f"\n\n[Download slides here]({item[layout.index('slides_url')]})"
-        md += f"\n\nRecommended citation: {item[layout.index('citation')]}\n"
+        md += "\n---\n"
+
+        # No body is written. _layouts/single.html already renders the citation
+        # and the Download Paper / Slides / Bibtex links from the front matter,
+        # and _includes/archive-single.html does the same on the listing page.
+        # Anything written here would be duplicated in both places - and because
+        # `excerpt_separator: "\n\n"` is set in _config.yml, Jekyll would also
+        # auto-excerpt the first paragraph onto the listing, giving a second
+        # visible "Recommended citation:" line per entry.
+        #
+        # Add prose here only if it says something the front matter does not.
         
         # Write the file
         os.makedirs("../_publications/", exist_ok=True)

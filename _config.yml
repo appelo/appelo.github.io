@@ -22,7 +22,7 @@ repository               : "appelo/appelo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "appelo.jpg"
+  avatar           : "appelo.png"
   name             : "Daniel Appelö"
   pronouns         : # example: "she/her"
   bio              : "Professor of Mathematics and CMDA"
@@ -47,10 +47,10 @@ author:
 
 
   # Repositories and software development - these take BARE USERNAMES
-  bitbucket        : "appelo"
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : # Username - TODO: confirm GitHub username
+  github           : "appelo"
   kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
@@ -95,8 +95,6 @@ publication_category:
     title: 'Extended Abstracts'
   theses:
     title: 'Theses'
-  reports:
-    title: 'Technical Reports and Notes'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
