@@ -20,6 +20,21 @@ both the time and the frequency domain, and about what it takes to make high
 order methods provably stable rather than merely accurate on smooth problems.
 More recently we have also been working on quantum computing.
 
+Our most ambitious current effort, running over the next five to seven years, is
+**Quantum Digital Twins** (QDTs): rigorous, self-correcting, bi-directional
+replicas of quantum computing hardware, together with the structure preserving
+and scalable numerical methods they rest on. A QDT couples three layers --- the
+quantum dynamics of the qubits (Schrödinger and Lindblad equations), the
+electromagnetic design of the device (Maxwell and Helmholtz equations), and
+quantum error correction --- into a single multi-fidelity framework. The
+framework is learned from measurements through Bayesian experimental design and
+optimal control, and in return it certifies and drives the physical device.
+Making this work rests on two pillars of numerical analysis that are worth
+pursuing in their own right: fast, scalable frequency domain wave solvers, and
+structure preserving low rank and tensor network integrators for high
+dimensional open quantum systems --- mathematical technology whose value extends
+well beyond quantum computing.
+
 ## Research
 {: .archive__subtitle}
 
@@ -31,10 +46,15 @@ More recently we have also been working on quantum computing.
   equation by time domain wave solves, turning an indefinite problem into a
   positive definite one that parallelizes and scales. Related work covers
   elastic and electromagnetic waves, overset grids, and eigenvalue computation.
-* **Quantum computing.** Structure preserving and low rank methods for the
-  Lindblad master equation, and quantum optimal control.
-* **Low rank methods.** Adaptive low rank time stepping, low rank Anderson
-  acceleration, and tensor methods for matrix differential equations.
+* **Quantum computing.** Structure preserving methods for the Schrödinger and
+  Lindblad equations --- completely positive and trace preserving integrators in
+  particular --- together with quantum optimal control, quantum error
+  correction, and the Bayesian characterization that ties a digital twin back to
+  the device it models.
+* **Low rank and tensor methods.** Adaptive low rank time stepping, low rank
+  Anderson acceleration, and tensor network integrators for the high dimensional
+  problems that open quantum systems and matrix differential equations give
+  rise to.
 * **Unbounded domains.** Artificial boundary conditions --- perfectly matched
   layers and local high order radiation conditions --- for problems posed on
   unbounded domains.
