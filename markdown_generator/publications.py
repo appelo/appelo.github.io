@@ -20,7 +20,8 @@ EXIT_ERROR = 0
 
 # The expected layout of the CSV / TSV file
 HEADER_LEGACY  = ['pub_date', 'title', 'venue', 'excerpt', 'citation', 'url_slug', 'paper_url', 'slides_url']
-HEADER_UPDATED = ['pub_date', 'title', 'venue', 'excerpt', 'citation', 'url_slug', 'paper_url', 'slides_url', 'category']
+HEADER_UPDATED = HEADER_LEGACY + ['category']
+HEADER_V3      = HEADER_UPDATED + ['bibtex_url']
 
 # YAML is very picky about how it takes a valid string, so we are replacing single and double quotes (and ampersands)
 # with their HTML encoded equivalents. This makes them look not so readable in raw format, but they are parsed and
@@ -43,28 +44,35 @@ def create_md(lines: list, layout: list):
         # Parse the YAML variables
         md = f"---\ntitle: \"{item[layout.index('title')]}\"\n"
         md += "collection: publications"
-        if len(layout) == len(HEADER_UPDATED):
+        if 'category' in layout:
             md += f"\ncategory: {item[layout.index('category')]}"
         else:
             md += "\ncategory: manuscripts"
-        md += f"\npermalink: /publication/{html_filename}"
+        md += f"\npermalink: /publications/{html_filename}"
         if len(str(item[layout.index('excerpt')])) > 5:
             md += f"\nexcerpt: '{html_escape(item[layout.index('excerpt')])}'"
         md += f"\ndate: {item[layout.index('pub_date')]}"
         md += f"\nvenue: '{html_escape(item[layout.index('venue')])}'"
         if len(str(item[layout.index('paper_url')])) > 5:
             md += f"\npaperurl: '{item[layout.index('paper_url')]}'"
+        if 'slides_url' in layout and len(str(item[layout.index('slides_url')])) > 5:
+            md += f"\nslidesurl: '{item[layout.index('slides_url')]}'"
+        if 'bibtex_url' in layout and len(str(item[layout.index('bibtex_url')])) > 5:
+            md += f"\nbibtexurl: '{item[layout.index('bibtex_url')]}'"
         md += f"\ncitation: '{html_escape(item[layout.index('citation')])}'"
         md += "\n---"
         
         # Markdown description for individual page
-        if len(str(item[layout.index('paper_url')])) > 5:
-            md += f"\n<a href='{item[layout.index('paper_url')]}'>Download paper here</a>\n"
         if len(str(item[layout.index('excerpt')])) > 5:
-            md += f"\n{html_escape(item[layout.index('excerpt')])}\n"
-        md += f"\nRecommended citation: {item[layout.index('citation')]}"
+            md += f"\n\n{html_escape(item[layout.index('excerpt')])}"
+        if len(str(item[layout.index('paper_url')])) > 5:
+            md += f"\n\n[Download paper here]({item[layout.index('paper_url')]})"
+        if 'slides_url' in layout and len(str(item[layout.index('slides_url')])) > 5:
+            md += f"\n\n[Download slides here]({item[layout.index('slides_url')]})"
+        md += f"\n\nRecommended citation: {item[layout.index('citation')]}\n"
         
         # Write the file
+        os.makedirs("../_publications/", exist_ok=True)
         md_filename = os.path.join("../_publications/", os.path.basename(md_filename))
         with open(md_filename, 'w') as f:
             f.write(md)
@@ -90,10 +98,11 @@ def read(filename: str) -> tuple[list, list]:
         sys.exit(EXIT_ERROR)
 
     # Verify the header, remove it once checked
-    layout = HEADER_UPDATED
-    if HEADER_LEGACY == lines[0]:
-        layout = HEADER_LEGACY
-    elif HEADER_UPDATED != lines[0]:
+    for candidate in (HEADER_V3, HEADER_UPDATED, HEADER_LEGACY):
+        if candidate == lines[0]:
+            layout = candidate
+            break
+    else:
         print(lines[0])
         print('The header of the file does not match the expected format', file=sys.stderr)
         sys.exit(EXIT_ERROR)

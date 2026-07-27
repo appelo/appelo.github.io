@@ -1,0 +1,104 @@
+# Group roster, rendered by _pages/group.md
+#
+# `name` and `role` are required; every other field is optional and guarded by
+# an {% if %} in the template.
+#
+# Current members render in the order listed here.
+# Alumni are sorted by `end` (integer, required on alumni) descending, so the
+# order in this file does not matter for that section.
+
+current:
+  - name: "Daniel Appelö"
+    role: "Group leader"
+    affiliation: "Professor, Mathematics and CMDA, Virginia Tech"
+
+  - name: "Amit Rotem"
+    role: "PhD candidate"
+    affiliation: "Virginia Tech"
+    expected: 2025
+
+  - name: "Spencer Lee"
+    role: "PhD candidate"
+    affiliation: "Michigan State University"
+    expected: 2025
+
+alumni:
+  - name: "Yann-Meing Law"
+    role: "Postdoc"
+    years: "2021-2023"
+    end: 2023
+    now: "Assistant Professor, Department of Mathematics and Statistics, California State University Long Beach"
+
+  - name: "Zhichao Peng"
+    role: "Postdoc"
+    years: "2020-2023"
+    end: 2023
+    now: "Tenure-track Assistant Professor, Department of Mathematics, The Hong Kong University of Science and Technology"
+
+  - name: "Allen Alvarez Loya"
+    role: "PhD"
+    institution: "CU Boulder"
+    years: "2022"
+    end: 2022
+    thesis: "High-Order Methods for Wave Phenomena"
+    now: "NSF Postdoc at Los Alamos National Laboratory"
+
+  - name: "Fortino Garcia"
+    role: "PhD"
+    institution: "CU Boulder"
+    years: "2021"
+    end: 2021
+    thesis: "Numerical Methods for Wave Phenomena"
+    now: "NSF Postdoc at NYU"
+
+  - name: "Oleksii Beznosov"
+    role: "PhD"
+    institution: "University of New Mexico"
+    years: "2020"
+    end: 2020
+    thesis: "From Wave Propagation to Spin Dynamics"
+    now: "Postdoc at the University of New Mexico"
+
+  - name: "Adeline Kornelus"
+    role: "PhD"
+    institution: "University of New Mexico"
+    years: "2017"
+    end: 2017
+    thesis: "High-order Hermite and discontinuous Galerkin methods"
+    now: "Postdoc at Arizona State University"
+
+  - name: "Juan Pablo Madrigal Cianci"
+    role: "MS"
+    institution: "University of New Mexico"
+    years: "2017"
+    end: 2017
+    thesis: "Seismic source inversion"
+    now: "PhD student at EPFL"
+
+  - name: "Siyang Wang"
+    role: "Visitor"
+    years: "2017"
+    end: 2017
+    now: "Lektor at Umeå University, Sweden"
+
+  - name: "Kristoffer Virta"
+    role: "Visitor"
+    years: "2015, 2016"
+    end: 2016
+    now: "Athlete and number theorist"
+
+  - name: "Evan Dye"
+    role: "MS"
+    institution: "University of New Mexico"
+    years: "2014"
+    end: 2014
+    thesis: "GPU optimization"
+    now: "Research Engineer at the University of New Mexico"
+
+  - name: "Xi (Ronald) Chen"
+    role: "PhD"
+    institution: "University of New Mexico"
+    years: "2012"
+    end: 2012
+    thesis: "Electromagnetic wave analysis"
+    now: "Research Engineer at HyPerComp Inc. (previously postdoc at the University of Arizona)"

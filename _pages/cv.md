@@ -11,54 +11,49 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Numerical Analysis, NADA, KTH Royal Institute of Technology, 2005
+  * Thesis: *Absorbing Layers and Non-Reflecting Boundary Conditions for Wave
+    Propagation Problems*
+  * Advisor: Gunilla Kreiss
+* Licentiate, KTH Royal Institute of Technology, 2003
+* M.S. in Numerical Analysis, KTH Royal Institute of Technology, 2000
 
-Work experience
+Positions
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Professor, Department of Mathematics and CMDA, Virginia Tech
+* Michigan State University, CMSE and Department of Mathematics
+* University of Colorado Boulder
+* University of New Mexico, Albuquerque
+  * Hans Werthen Prize postdoctoral researcher, working with Tom Hagstrom on
+    perfectly matched layer models for hyperbolic-parabolic systems and on
+    Hermite methods
+* Postdoc, Mechanical Engineering, Caltech, with Tim Colonius
+* Lawrence Livermore National Laboratory, Applied Mathematics group, Center for
+  Applied Scientific Computing
+  * Part of the Serpentine project, developing massively parallel numerical
+    methods for seismology with Anders Petersson and Bjorn Sjögreen, and high
+    order accurate embedded boundary methods for the wave equation
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<!-- TODO: add dates and ranks to the positions above; add Awards, Service,
+     Grants and Students sections. -->
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+
+{%- for post in site.publications reversed %}
+* [{{ post.title }}]({{ base_path }}{{ post.url }}){% if post.venue %}. {{ post.citation }}{% endif %}
+{%- endfor %}
+
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+
+{%- for post in site.talks reversed %}
+* [{{ post.title }}]({{ base_path }}{{ post.url }}){% if post.venue %}. {{ post.type }} at {{ post.venue }}, {{ post.location }}{% endif %}
+{%- endfor %}
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+{%- for post in site.teaching reversed %}
+* [{{ post.title }}]({{ base_path }}{{ post.url }}){% if post.venue %}. {{ post.type }}, {{ post.venue }}{% endif %}
+{%- endfor %}
