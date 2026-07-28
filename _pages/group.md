@@ -20,7 +20,10 @@ equations. We will have openings for both postdocs and PhD students --- please
 
 {{ m.role }}{% if m.affiliation %}, {{ m.affiliation }}{% endif %}{% if m.expected %} (expected {{ m.expected }}){% endif %}
 {: .archive__item-excerpt}
-{% endfor %}
+{% if m.projects %}
+{{ m.projects | strip }}
+{: .archive__item-excerpt}
+{% endif %}{% endfor %}
 
 ## Alumni
 {: .archive__subtitle}
@@ -32,10 +35,16 @@ equations. We will have openings for both postdocs and PhD students --- please
 
 {{ m.role }}{% if m.institution %}, {{ m.institution }}{% endif %}{% if m.years %} ({{ m.years }}){% endif %}
 {: .archive__item-excerpt}
-{% if m.thesis %}
+{% if m.note %}
+{{ m.note | strip }}
+{: .archive__item-excerpt}
+{% endif %}{% if m.projects %}
+{{ m.projects | strip }}
+{: .archive__item-excerpt}
+{% endif %}{% if m.thesis %}
 *{{ m.thesis }}*
 {: .archive__item-excerpt}
 {% endif %}{% if m.now %}
-Now: {{ m.now }}
+First job: {{ m.now }}
 {: .archive__item-excerpt}
 {% endif %}{% endfor %}

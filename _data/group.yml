@@ -18,29 +18,63 @@ current:
   - name: "Jiuhua Hu"
     role: "Postdoc"
     years: "2024-"
+    projects: >
+      With Jiuhua and Yingda Cheng we build arbitrary high order integrators for the
+      Lindblad equation with time-dependent Hamiltonians. The schemes come from
+      nested Picard iteration, take Kraus form, and are completely positive and
+      trace preserving by construction, so the simulated density matrix never drifts
+      away from being a physical state. A follow-up uses Gregory quadrature on
+      equispaced nodes to reach ninth order.
 
   - name: "Måns Andersson"
     linkedin: "https://se.linkedin.com/in/maansandersson"
     role: "Postdoc"
     years: "2025-"
+    projects: >
+      Måns works on sub-linear low rank solvers, at the moment a fast Poisson solver
+      built on Cross-DEIM, an adaptive cross approximation that alternates between
+      selecting indices and rebuilding a low rank solution. A second thread of the
+      work is using PyTorch as a general purpose array language, which buys native
+      GPU access without hand-writing device code.
 
   - name: "Amit Rotem"
     linkedin: "https://www.linkedin.com/in/amit-rotem-6b9275399/"
     role: "PhD candidate"
     affiliation: "Virginia Tech"
     expected: 2026
+    projects: >
+      Amit works on the convergence theory behind WaveHoltz. With Olof Runborg we
+      proved that the iteration converges for any stable semi-discretization of the
+      wave equation, and that for some classes of frequency domain problems it needs
+      only O(omega) iterations. More recently we combined WaveHoltz with a
+      heterogeneous multiscale method, so the same machinery handles materials whose
+      coefficients vary rapidly.
 
   - name: "Spencer Lee"
     linkedin: "https://www.linkedin.com/in/spencer-lee-msu/"
     role: "PhD candidate"
     affiliation: "Michigan State University"
     expected: 2026
+    projects: >
+      Spencer works on quantum optimal control. Our High-Order Hermite Optimization
+      method computes exact discrete gradients for continuous, parameterized control
+      pulses while solving Schrödinger's equation or the Lindblad master equation
+      with arbitrarily high order Hermite Runge-Kutta schemes; it is implemented in
+      the Julia package QuantumGateDesign.jl. We are now adapting Filon quadrature
+      to the highly oscillatory dynamics that make these simulations expensive.
 
   - name: "Peter DelMastro"
     linkedin: "https://www.linkedin.com/in/pdelmastro"
     role: "PhD candidate"
     affiliation: "Virginia Tech"
     expected: 2027
+    projects: >
+      Peter works on pushing our Lindblad solvers to larger systems. With Yingda
+      Cheng we compress at two levels: the density matrix is factored into tall-
+      skinny matrices, and the columns of those factors are themselves stored as
+      tensor trains, or matrix product states. This fits directly onto our earlier
+      Kraus is King scheme, so the result stays completely positive and trace
+      preserving.
 
   - name: "Nishan Gurung"
     role: "PhD student"
@@ -51,8 +85,15 @@ alumni:
   - name: "Shixu Meng"
     role: "Postdoc"
     years: "2024-2025"
+    note: "Co-mentored with Yingda Cheng (primary mentor)."
     end: 2025
     now: "Assistant Professor, University of Texas at Dallas"
+    projects: >
+      With Shixu and Yingda Cheng we developed a class of preconditioners for low
+      rank GMRES applied to the multiterm matrix equations that come out of implicit
+      time stepping for stiff PDEs. The iteration runs on the low rank factors of
+      the solution rather than on the full matrix, which is where the savings come
+      from, and also what makes preconditioning delicate.
 
   - name: "Yann-Meing Law"
     linkedin: "https://www.linkedin.com/in/yann-meing-law-8a137a109/"
@@ -60,6 +101,13 @@ alumni:
     years: "2021-2023"
     end: 2023
     now: "Assistant Professor, California State University Long Beach"
+    projects: >
+      Yann-Meing worked on making Hermite-Taylor methods usable on real geometry.
+      The method is highly efficient on periodic domains but had no systematic way
+      to impose boundary conditions; our correction function method supplies one,
+      and extends to embedded boundaries and material interfaces for Maxwell's
+      equations. We also built energy-conserving Hermite methods for dielectric and
+      dispersive media, and a p-adaptive variant for nonlinear dispersive Maxwell.
 
   - name: "Zhichao Peng"
     linkedin: "https://www.linkedin.com/in/zhichao-peng-13895b210/"
@@ -67,6 +115,14 @@ alumni:
     years: "2020-2023"
     end: 2023
     now: "Assistant Professor, Hong Kong University of Science and Technology"
+    projects: >
+      Zhichao's work spans both halves of the group. On the wave side we built EM-
+      WaveHoltz, which extracts time-harmonic solutions of Maxwell's equations from
+      time-domain simulation and yields a positive definite system, together with an
+      embedded boundary discretization that avoids small cell stiffness altogether.
+      On the quantum side we worked on characterizing superconducting devices from
+      measurement data. Most recently we have been accelerating WaveHoltz by
+      deflating the eigenvectors nearest the driving frequency.
 
   - name: "Allen Alvarez Loya"
     linkedin: "https://www.linkedin.com/in/allen-alvarez-loya-728aa88b/"
@@ -76,6 +132,13 @@ alumni:
     end: 2022
     thesis: "High-Order Methods for Wave Phenomena"
     now: "NSF Postdoc at Los Alamos National Laboratory"
+    projects: >
+      Allen worked on Hermite methods for problems where the solution is not smooth
+      or the geometry is not a box. For Hamilton-Jacobi equations we built a Hermite
+      solver with a discontinuity sensor that keeps high order accuracy in smooth
+      regions while resolving kinks sharply. With Bill Henshaw we then took Hermite
+      methods to curvilinear grids using centered compatibility conditions at the
+      boundary, and he was part of extending WaveHoltz to elastic waves.
 
   - name: "Fortino Garcia"
     linkedin: "https://www.linkedin.com/in/fortino-garcia-2166b882/"
@@ -85,6 +148,14 @@ alumni:
     end: 2021
     thesis: "Part I: WaveHoltz, a new iterative method for frequency domain problems. Part II: Numerical methods for quantum control"
     now: "NSF Postdoc at the Courant Institute, New York University"
+    projects: >
+      Fortino was there for the start of WaveHoltz, the observation that filtering
+      the solution of the wave equation over one period yields a coercive operator,
+      and so a positive definite system for the Helmholtz problem. With Olof Runborg
+      we extended the analysis to impedance boundary conditions and to damped
+      problems, and then to elastic waves in El-WaveHoltz. He also worked on the
+      quantum side of the group, including the characterization of superconducting
+      devices.
 
   - name: "Oleksii Beznosov"
     linkedin: "https://www.linkedin.com/in/oleksii-beznosov-a17b6a7b/"
@@ -94,6 +165,14 @@ alumni:
     end: 2020
     thesis: "From Wave Propagation to Spin Dynamics: Mathematical and Computational Aspects"
     now: "Postdoc at Los Alamos National Laboratory"
+    projects: >
+      Oleksii's work spanned two quite different problems. One was combining Hermite
+      methods with discontinuous Galerkin on overset grids, using thin curvilinear
+      grids near boundaries and Cartesian grids in the volume so that the cost
+      approaches that of a structured Hermite method. The other was spin
+      polarization in high energy electron storage rings, where we worked on the
+      Bloch equation for the polarization density with the FCC-ee and CEPC designs
+      in mind.
 
   - name: "Adeline Kornelus"
     linkedin: "https://www.linkedin.com/in/adeline-kornelus-23386676/"
@@ -103,6 +182,13 @@ alumni:
     end: 2017
     thesis: "High Order Hermite and Discontinuous Galerkin Methods for Hyperbolic Problems"
     now: "Postdoc at Arizona State University"
+    projects: >
+      With Adeline we developed flux-conservative Hermite methods for nonlinear
+      conservation laws, keeping the high order spatial accuracy of Hermite methods
+      on smooth solutions while behaving far better where the solution steepens.
+      Shocks are captured with entropy viscosity, and a companion paper examined how
+      the choice of scaling in that viscosity controls how much dissipation you
+      actually get.
 
   - name: "Juan Pablo Madrigal Cianci"
     linkedin: "https://www.linkedin.com/in/juan-pablo-madrigal-cianci-81b60b136/"
@@ -110,7 +196,9 @@ alumni:
     institution: "University of New Mexico"
     years: "2017"
     end: 2016
+    note: "Co-mentored with Mohammad Motamed (primary mentor)."
     thesis: "Deterministic and Probabilistic Methods for Seismic Source Inversion"
+    now: "PhD student at EPFL"
 
   - name: "Evan Dye"
     linkedin: "https://www.linkedin.com/in/evandye/"
@@ -119,6 +207,7 @@ alumni:
     years: "2014"
     end: 2014
     thesis: "GPU Implementations of Hermite Methods"
+    now: "Researcher in the Computer Science Department at the University of New Mexico"
 
   - name: "Xi Chen"
     role: "PhD"
@@ -126,4 +215,4 @@ alumni:
     years: "2012"
     end: 2012
     thesis: "Numerical and Analytical Studies of Electromagnetic Waves: Hermite Methods, Supercontinuum Generation, and Multiple Poles in the SEM"
-    now: "Researcher at HyPerComp Engineering Inc."
+    now: "Postdoc at the University of Arizona"

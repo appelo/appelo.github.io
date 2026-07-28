@@ -13,6 +13,7 @@
 #    The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/publications/YYYY-MM-DD-[url_slug]`
 import csv
 import os
+import re
 import sys
 
 # Flag to indicate an error occurred
@@ -62,21 +63,40 @@ def create_md(lines: list, layout: list):
         md += f"\ncitation: '{html_escape(item[layout.index('citation')])}'"
         md += "\n---\n"
 
-        # No body is written. _layouts/single.html already renders the citation
-        # and the Download Paper / Slides / Bibtex links from the front matter,
-        # and _includes/archive-single.html does the same on the listing page.
-        # Anything written here would be duplicated in both places - and because
-        # `excerpt_separator: "\n\n"` is set in _config.yml, Jekyll would also
-        # auto-excerpt the first paragraph onto the listing, giving a second
-        # visible "Recommended citation:" line per entry.
+        # This script generates FRONT MATTER ONLY. The citation and the download
+        # links are rendered from the front matter by _layouts/single.html and
+        # _includes/archive-single.html, so writing them into the body too would
+        # show them twice.
         #
-        # Add prose here only if it says something the front matter does not.
-        
-        # Write the file
+        # Hand-written body content IS supported and is preserved: anything you
+        # add below the closing '---' of a file in _publications/ survives every
+        # subsequent run of this script. That is where per-paper prose, figures
+        # and equations go. Only the front matter is regenerated from the CSV.
+        #
+        # NOTE: `excerpt_separator: "\n\n"` is set in _config.yml, so the first
+        # paragraph of any body you write would become the listing excerpt. Set
+        # the `excerpt` column in the CSV to control that text explicitly.
+
         os.makedirs("../_publications/", exist_ok=True)
         md_filename = os.path.join("../_publications/", os.path.basename(md_filename))
+
+        body = preserved_body(md_filename)
         with open(md_filename, 'w') as f:
-            f.write(md)
+            f.write(md + body)
+
+def preserved_body(path: str) -> str:
+    '''Return the hand-written body of an existing generated file, i.e. everything
+    after the closing '---' of its front matter. Empty string if the file does not
+    exist or has no body. This is what keeps per-paper prose from being clobbered
+    when the CSV is regenerated.'''
+    if not os.path.exists(path):
+        return ''
+    with open(path) as f:
+        text = f.read()
+    match = re.match(r'^---\r?\n.*?\r?\n---[ \t]*\r?\n?', text, re.DOTALL)
+    if not match:
+        return ''
+    return text[match.end():]
 
 def html_escape(text):
     """Produce entities within text."""
