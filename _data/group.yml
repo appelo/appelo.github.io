@@ -59,7 +59,7 @@ alumni:
     years: "2024-2026"
     end: 2026
     projects: >
-      With Jiuhua and Yingda Cheng we build arbitrary high order integrators for the
+      With Jiuhua and Yingda Cheng we built arbitrary high order integrators for the
       Lindblad equation with time-dependent Hamiltonians. The schemes come from
       nested Picard iteration, take Kraus form, and are completely positive and
       trace preserving by construction, so the simulated density matrix never drifts
@@ -74,7 +74,7 @@ alumni:
     end: 2026
     now: "GPU Performance Engineer at Susquehanna International Group"
     projects: >
-      Amit works on the convergence theory behind WaveHoltz. With Olof Runborg we
+      Amit worked on the convergence theory behind WaveHoltz. With Olof Runborg we
       proved that the iteration converges for any stable semi-discretization of the
       wave equation, and that for some classes of frequency domain problems it needs
       only O(omega) iterations. More recently we combined WaveHoltz with a
