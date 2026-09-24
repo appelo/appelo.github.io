@@ -34,6 +34,7 @@ Slides from three talks, one for each of the group's main research directions.
 ## Selected presentations at professional meetings
 {: .archive__subtitle}
 
+* **Research frontiers in wave propagation.** Frontiers in Classical and Quantum Initial Value Problems (CQIVP 2026), Korea University, Seoul, November 2026.
 * **What's new with the WaveHoltz iteration?** FoCM 2026, workshop on Foundations of Numerical PDEs, Vienna, July 2026.
 * **Low-rank Anderson acceleration for nonlinear matrix and tensor equations.** SciCADE 2026, Edinburgh, June 2026.
 * **Accelerating WaveHoltz with deflation.** Waves 2026, Montreal, June 2026.
