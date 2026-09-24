@@ -15,6 +15,9 @@ group develops fast, stable and accurate numerical algorithms for the
 approximation of differential equations arising in engineering and the natural
 sciences.
 
+I will be joining the [Department of Mathematics](https://www.sfu.ca/math.html)
+at Simon Fraser University in January 2027.
+
 Much of our work is about waves --- acoustic, elastic and electromagnetic --- in
 both the time and the frequency domain, and about what it takes to make high
 order methods provably stable rather than merely accurate on smooth problems.
@@ -66,10 +69,18 @@ See the [publications]({{ base_path }}/publications/) page for the full list.
 
 <!-- REVIEW THIS BOX: remove or update once these positions are filled. -->
 
-**We will have openings for both Postdocs and PhD students.** Please
-[contact me](mailto:appelo@vt.edu) to learn more, and see the
+<div class="notice--info" markdown="1">
+**Two postdoctoral fellowships at Simon Fraser University**, jointly with
+Prof. [Yingda Cheng](https://yingdacheng.github.io/). See
+[MathJobs #28865](https://www.mathjobs.org/jobs/list/28865) for details.
+Review of applications begins December 1, 2026.
+
+I am also recruiting graduate students at SFU; see the
+[SFU Mathematics graduate program](https://www.sfu.ca/math/graduate.html) page.
+
+[Send me an email](mailto:appelo@vt.edu) if you are interested, and see the
 [group]({{ base_path }}/group/) page for who you would be working with.
-{: .notice--info}
+</div>
 
 ## Group
 {: .archive__subtitle}
