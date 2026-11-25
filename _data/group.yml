@@ -1,6 +1,6 @@
 # Group roster, rendered by _pages/group.md
 #
-# Source of truth: Appelo_D_CV.pdf, "Teaching" section (advisement), 24 July 2026.
+# Source of truth: Appelo_D_CV.pdf, "Teaching" section (advisement), 24 November 2026.
 #
 # `name` and `role` are required; every other field is optional and guarded by
 # an {% if %} in the template.
@@ -13,7 +13,7 @@ current:
   - name: "Daniel Appelö"
     linkedin: "https://www.linkedin.com/in/appelo/"
     role: "Group leader"
-    affiliation: "Professor, Mathematics and CMDA, Virginia Tech"
+    affiliation: "Professor, Mathematics, Simon Fraser University"
 
   - name: "Måns Andersson"
     linkedin: "https://se.linkedin.com/in/maansandersson"
@@ -25,19 +25,6 @@ current:
       selecting indices and rebuilding a low rank solution. A second thread of the
       work is using PyTorch as a general purpose array language, which buys native
       GPU access without hand-writing device code.
-
-  - name: "Spencer Lee"
-    linkedin: "https://www.linkedin.com/in/spencer-lee-msu/"
-    role: "PhD candidate"
-    affiliation: "Michigan State University"
-    expected: 2026
-    projects: >
-      Spencer works on quantum optimal control. Our High-Order Hermite Optimization
-      method computes exact discrete gradients for continuous, parameterized control
-      pulses while solving Schrödinger's equation or the Lindblad master equation
-      with arbitrarily high order Hermite Runge-Kutta schemes; it is implemented in
-      the Julia package QuantumGateDesign.jl. We are now adapting Filon quadrature
-      to the highly oscillatory dynamics that make these simulations expensive.
 
   - name: "Peter DelMastro"
     linkedin: "https://www.linkedin.com/in/pdelmastro"
@@ -72,6 +59,7 @@ alumni:
     institution: "Virginia Tech"
     years: "2026"
     end: 2026
+    thesis: "WaveHoltz: Theory and High Performance Applications"
     now: "GPU Performance Engineer at Susquehanna International Group"
     projects: >
       Amit worked on the convergence theory behind WaveHoltz. With Olof Runborg we
@@ -80,6 +68,21 @@ alumni:
       only O(omega) iterations. More recently we combined WaveHoltz with a
       heterogeneous multiscale method, so the same machinery handles materials whose
       coefficients vary rapidly.
+
+  - name: "Spencer Lee"
+    linkedin: "https://www.linkedin.com/in/spencer-lee-msu/"
+    role: "PhD"
+    institution: "Michigan State University"
+    years: "2026"
+    end: 2026
+    thesis: "Numerical Methods for Quantum Optimal Control and Variational Quantum Algorithms"
+    projects: >
+      Spencer worked on quantum optimal control. Our High-Order Hermite Optimization
+      method computes exact discrete gradients for continuous, parameterized control
+      pulses while solving Schrödinger's equation or the Lindblad master equation
+      with arbitrarily high order Hermite Runge-Kutta schemes; it is implemented in
+      the Julia package QuantumGateDesign.jl. We also adapted Filon quadrature to
+      the highly oscillatory dynamics that make these simulations expensive.
 
   - name: "Shixu Meng"
     url: "https://www.shixumeng.site"

@@ -9,14 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
-I am a Professor in the [Department of Mathematics](https://math.vt.edu) and the
-Computational Modeling and Data Analytics (CMDA) program at Virginia Tech. My
-group develops fast, stable and accurate numerical algorithms for the
-approximation of differential equations arising in engineering and the natural
-sciences.
-
-I will be joining the [Department of Mathematics](https://www.sfu.ca/math.html)
-at Simon Fraser University in January 2027.
+I am a Professor in the [Department of Mathematics](https://www.sfu.ca/math.html)
+at Simon Fraser University. My group develops fast, stable and accurate
+numerical algorithms for the approximation of differential equations arising in
+engineering and the natural sciences.
 
 Much of our work is about waves --- acoustic, elastic and electromagnetic --- in
 both the time and the frequency domain, and about what it takes to make high
@@ -78,15 +74,14 @@ Review of applications begins December 1, 2026.
 I am also recruiting graduate students at SFU; see the
 [SFU Mathematics graduate program](https://www.sfu.ca/math/graduate.html) page.
 
-[Send me an email](mailto:appelo@vt.edu) if you are interested, and see the
+[Send me an email](mailto:daniel_appelo@sfu.ca) if you are interested, and see the
 [group]({{ base_path }}/group/) page for who you would be working with.
 </div>
 
 ## Group
 {: .archive__subtitle}
 
-The group currently includes two postdocs and four PhD students at Virginia Tech
-and Michigan State. Former members have gone on to faculty positions at CSU Long
-Beach, HKUST and UT Dallas, and to postdocs at Los Alamos, the Courant Institute
-and Arizona State --- the [group]({{ base_path }}/group/) page has the full
-roster.
+The group currently includes one postdoc and one PhD student.
+Former members have gone on to faculty positions at CSU Long Beach, HKUST and UT
+Dallas, and to postdocs at Los Alamos, the Courant Institute and Arizona State
+--- the [group]({{ base_path }}/group/) page has the full roster.

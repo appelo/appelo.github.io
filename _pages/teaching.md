@@ -15,7 +15,7 @@ author_profile: true
 
 | Term | Course |
 |---|---|
-| Fall 2027 | Mathematical Modeling: Methods and Tools II, CMDA 3606 |
+| Fall 2026 | Mathematical Modeling: Methods and Tools II, CMDA 3606 |
 | Spring 2026 | Mathematical Modeling: Methods and Tools II, CMDA 3606 (two sections) |
 | Spring 2025 | Mathematical Modeling: Methods and Tools II, CMDA 3606 |
 | Fall 2024 | Numerical Linear Algebra, MATH 5424 |

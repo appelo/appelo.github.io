@@ -25,11 +25,11 @@ author:
   avatar           : "appelo.png"
   name             : "Daniel Appelö"
   pronouns         : # example: "she/her"
-  bio              : "Professor of Mathematics and CMDA"
-  location         : "Blacksburg, VA"
-  employer         : "Virginia Tech"
+  bio              : "Professor of Mathematics"
+  location         : "Burnaby, BC"
+  employer         : "Simon Fraser University"
   uri              : # URL
-  email            : "appelo@vt.edu"
+  email            : "daniel_appelo@sfu.ca"
 
   # Academic websites - these take FULL URLs
   academia         : # URL
@@ -182,6 +182,7 @@ exclude:
   - assets/js/plugins
   - assets/js/vendor
   - CHANGELOG
+  - CLAUDE.md
   - Capfile
   - config
   - docker-compose.yaml

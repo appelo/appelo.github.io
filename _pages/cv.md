@@ -28,7 +28,8 @@ redirect_from:
 
 | | |
 |---|---|
-| 2023-- | **Professor**, Department of Mathematics, Virginia Tech |
+| 2027-- | **Professor**, Department of Mathematics, Simon Fraser University, Canada |
+| 2023--2026 | **Professor**, Department of Mathematics, Virginia Tech |
 | 2020--2023 | **Associate Professor**, Department of Computational Mathematics, Science & Engineering and Department of Mathematics, Michigan State University |
 | 2017--2020 | **Associate Professor in Applied Mathematics**, University of Colorado Boulder |
 | 2017, 2018, 2019, 2022 | **Visiting Professor in Scientific Computing** (summers), Uppsala University, Sweden |
@@ -62,11 +63,11 @@ redirect_from:
 * **Machine-learning-assisted practical quantum error correction via optimal control.** Co-PI. Army Research Office, QC3 BAA, 2026--2030.
 * **Quantum Digital Twins.** PI. DOE-EXPRESS, 2024--2026.
 * **Collaborative Research: MATH-DT: Mathematical Foundations of Quantum Digital Twins.** Co-PI. NSF, 2025--2028.
-* **High Order Wave Equation Algorithms for Frequency Domain Problems.** PI. NSF DMS 2208164, 2022--2026.
 
 ### Past
 {: .archive__item-title}
 
+* **High Order Wave Equation Algorithms for Frequency Domain Problems.** PI. NSF DMS 2208164, 2022--2026.
 * **NRT-AI-HDR: Harnessing the data revolution to enable predictive multi-scale modeling across STEM.** PI. NSF 2152014, 2022--2027.
 * **Numerical Methods for Wave Equations in Time and Frequency Domain.** PI. NSF DMS 1913076 & 2210286, 2019--2023.
 * **DOE Tough Errors Are no Match (TEAM): Optimizing the quantum compiler for noise resilience.** Co-PI. Part of the DOE Accelerated Research in Quantum Computing (ARQC) program, 2019--2024.
